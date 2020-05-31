@@ -1,0 +1,414 @@
+:root {
+    --italianno: 'Italianno', cursive;
+    --lato: font-family: 'Lato', sans-serif;
+    --raleway: font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.encabezado {
+    font-size: 2.4rem;
+    font-family: var(--lato);
+    color: #000000;
+    line-height: 2.4rem;
+}
+
+.encabezado span {
+    font-size: 3.8rem;
+    font-family: var(--italianno);
+    color: #e082a8;
+}
+
+
+/** Sociales **/
+
+.sociales ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.sociales ul li a::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: #e082a8;
+}
+
+.sociales ul li a[href*="facebook.com"]::before {
+    content: '\f230';
+}
+
+.sociales ul li a[href*="twitter.com"]::before {
+    content: '\f081';
+}
+
+.sociales ul li a[href*="instagram.com"]::before {
+    content: '\f16d';
+}
+
+.sociales ul li a[href*="pinterest.com"]::before {
+    content: '\f0d2';
+}
+
+.sociales ul li a[href*="youtube.com"]::before {
+    content: '\f16a';
+}
+
+
+/** Navegación **/
+
+.navegacion {
+    background-color: #8ed3cc;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: #ffffff;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.nav-principal {
+    background-image: url(../img/border_horizontal.png), url(../img/border_horizontal.png);
+    background-repeat: repeat-x;
+    background-position: 0px top, 0px bottom;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-family: var(--raleway);
+    transition: background-color .5s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: #f6b0cc;
+    color: #ffffff;
+}
+
+.active {
+    background-color: #f6b0cc;
+}
+
+
+/** Navegación **/
+
+.carousel-caption h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+
+/** Sección Nuevo sitio **/
+
+.nuevo-sitio p {
+    font-family: var(--lato);
+    color: #979797;
+    font-size: 1.6rem;
+}
+
+
+/** Servicios **/
+
+.imagen-servicio img {
+    border: 6px solid #ffffff;
+    -webkit-transition: transform .3s ease;
+    -ms-transition: transform .3s ease;
+    transition: transform .3s ease;
+}
+
+.imagen-servicio img:hover {
+    -webkit-transform: scale(1.2) rotate(10deg);
+    -webkit-ms-transition: scale(1.2) rotate(10deg);
+    transform: scale(1.2) rotate(10deg);
+}
+
+.servicio-info {
+    background-color: #ffffff;
+    margin-top: -5rem;
+}
+
+.servicio-info .btn-primary {
+    border-radius: 0;
+    background-color: #e082a8;
+    border: none;
+}
+
+.servicio-info .btn:hover {
+    background-color: #95345b;
+}
+
+
+/** Horarios **/
+
+.horario {
+    background-color: #8ed3cc;
+    color: #ffffff;
+}
+
+.horario th,
+.horario tr {
+    color: #ffffff;
+}
+
+.horario h2 {
+    font-size: 2.2rem;
+    font-family: var(--lato);
+}
+
+.horario .table {
+    border: 2px solid #e082a8;
+}
+
+.horario .table thead {
+    background-color: #e082a8;
+}
+
+.horario .table td,
+.horario .table thead th {
+    border: none;
+}
+
+.horario .table tbody tr td {
+    padding: .35rem;
+    font-family: var(--lato);
+}
+
+.bg-horario {
+    background-image: url(../img/bg_horarios.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 400px;
+}
+
+
+/** Productos **/
+
+.productos .card {
+    border: none;
+    -webkit-transition: transform .3s ease;
+    -webkit-ms-transition: transform .3s ease;
+    transition: transform .3s ease;
+}
+
+.productos .card:hover {
+    -webkit-transform: scale(1.2);
+    -webkit-ms-transition: scale(1.2);
+    transform: scale(1.2);
+}
+
+.productos .card a {
+    color: #000000;
+}
+
+.productos .card a:hover {
+    text-decoration: none;
+}
+
+.productos .card h3 {
+    color: #e082a8;
+    font-size: 1.2rem;
+    font-family: var(--lato);
+}
+
+.productos .card p {
+    font-size: .8rem;
+}
+
+.productos .card .precio {
+    font-size: 1.6rem;
+    color: #979797;
+}
+
+
+/** Citas **/
+
+.citas {
+    background-image: url(../img/bg_citas.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+@media (min-width: 992px) {
+    .citas {
+        background-size: cover;
+    }
+}
+
+.citas h3 {
+    font-size: 3.5rem;
+    font-family: var(--lato);
+}
+
+.citas p {
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+}
+
+.citas .btn-primary {
+    background-color: #8ed3cc;
+    border: 0;
+    padding: 1rem 5rem;
+    border-radius: 0;
+    font-family: var(--lato);
+    font-size: 1.2rem;
+}
+
+.citas .btn:hover {
+    background-color: #27afa1;
+}
+
+
+/** Footer **/
+
+.copyright {
+    color: #979797;
+    font-size: .8rem;
+}
+
+
+/** -------- nosotros.html ----------- **/
+
+
+/** Hero **/
+
+.hero {
+    position: relative;
+}
+
+.hero h2 {
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    background-color: #8ed3cc;
+    font-family: var(--raleway);
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 2.8rem;
+}
+
+.contenido-principal p {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-family: var(--lato);
+}
+
+#img img {
+    transition: filter .3s ease-in-out;
+}
+
+#img img:hover {
+    filter: grayscale(80%);
+}
+
+
+/** sidebar **/
+
+aside {
+    background-color: #8ed3cc;
+    color: #ffffff;
+}
+
+
+/** -------- servicios.html ----------- **/
+
+
+/** Accordion **/
+
+#servicios .card-header {
+    background-color: #e082a8;
+    padding: 0 1.25rem;
+}
+
+#servicios .card-header .btn-link {
+    color: #ffffff;
+    font-family: var(--lato);
+    font-size: 1.6rem;
+}
+
+#servicios .card-body {
+    font-size: 1.2rem;
+}
+
+
+/** Cupón sidebar **/
+
+.cupon {
+    border: 3px dashed #ffffff;
+    font-family: var(--lato);
+}
+
+.cupon .display-4 {
+    font-size: 2rem;
+}
+
+.cupon p {
+    font-size: 1.2rem;
+}
+
+
+/** -------- productos.html ----------- **/
+
+
+/** card columns**/
+
+.card-columns {
+    -webkit-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: .75rem;
+    column-gap: .75rem;
+}
+
+@media (min-width:576px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width:768px) {
+    .card-columns {
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+
+/** -------- contacto.html ----------- **/
+
+
+/** formulario**/
+
+.btn-primary {
+    background-color: #8ed3cc;
+    border: 0;
+    padding: 1rem 5rem;
+    border-radius: 0;
+    font-family: var(--lato);
+    font-size: 1.2rem;
+}
+
+.formulario-contacto {
+    border: 2px solid #9a9a9a;
+    background-color: #ffffff;
+}
